@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Open LoginActivity
         Intent intent = new Intent(this,LoginActivity.class);
+        // delete de activity stack
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

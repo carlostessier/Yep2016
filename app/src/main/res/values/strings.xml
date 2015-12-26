@@ -6,4 +6,7 @@
     <string name="password_hint">Contraseña</string>
     <string name="Login_button_label">Ingresar</string>
     <string name="sing_up_text">¡Regístrate!</string>
+    <string name="email_hint">E-mail</string>
+    <string name="sign_up_button_label">Regístrate</string>
+
 </resources>
