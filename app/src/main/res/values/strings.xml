@@ -8,5 +8,7 @@
     <string name="sing_up_text">¡Regístrate!</string>
     <string name="email_hint">E-mail</string>
     <string name="sign_up_button_label">Regístrate</string>
+    <string name="empty_field_message">El campo %1$s está vacío.</string>
+    <string name="signup_error_title">Error</string>
 
 </resources>

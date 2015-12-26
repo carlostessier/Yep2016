@@ -8,8 +8,8 @@
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "es.carlostessier.yep2016.MainActivity"/>
       <point      
-        x = "112"      
-        y = "80"/>
+        x = "1474"      
+        y = "2118"/>
     </statePointEntry>
     <statePointEntry>
       <state      
@@ -24,8 +24,8 @@
         class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
         className = "es.carlostessier.yep2016.LoginActivity"/>
       <point      
-        x = "1004"      
-        y = "68"/>
+        x = "984"      
+        y = "56"/>
     </statePointEntry>
   </locations>
 </navigationModel>
