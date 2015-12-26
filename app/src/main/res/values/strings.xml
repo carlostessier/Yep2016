@@ -2,4 +2,8 @@
     <string name="app_name">Yep2016</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="username_hint">Nombre de usuario</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="Login_button_label">Ingresar</string>
+    <string name="sing_up_text">¡Regístrate!</string>
 </resources>
