@@ -2,12 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="es.carlostessier.yep2016">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".YepApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="BGQIrJbjxddfzQ0miX5szPiY8pO2hoVhVwwPVfwU" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="dXi6gRS1n7lEV3ycxmt67cYHxIDYLiQYyPciJc1q" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -18,14 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LoginActivity"
+        <activity android:name=".LoginActivity"
             android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".SignUpActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".LoginActivity">
-            >
+
         </activity>
     </application>
 
