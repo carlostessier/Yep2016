@@ -43,6 +43,7 @@
         android:id="@+id/signupButton"
         android:layout_below="@+id/emailField"
         android:layout_centerHorizontal="true"
+        android:onClick="actionSignupButton"
         />
 
 </RelativeLayout>
