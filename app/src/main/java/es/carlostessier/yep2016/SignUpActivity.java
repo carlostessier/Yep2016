@@ -2,10 +2,14 @@ package es.carlostessier.yep2016;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -18,6 +22,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText usernameField;
     private EditText passwordField;
     private EditText emailAddressField;
+    private MenuItem miActionProgressItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +87,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void addUser(final String username, String password, String email) {
-
+        showProgressBar();
         ParseUser user = new ParseUser();
         user.setUsername(username);
         user.setPassword(password);
@@ -100,8 +105,35 @@ public class SignUpActivity extends AppCompatActivity {
                     String message = String.format(getString(R.string.add_user_error_message), username);
                     errorFieldDialog(message);
                 }
-
+                hideProgressBar();
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_sign_up_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // Store instance of the menu item containing progress
+        miActionProgressItem = menu.findItem(R.id.miActionProgress);
+        // Extract the action-view from the menu item
+        ProgressBar v =  (ProgressBar) MenuItemCompat.getActionView(miActionProgressItem);
+        // Return to finish
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    public void showProgressBar() {
+        // Show progress item
+        miActionProgressItem.setVisible(true);
+    }
+
+    public void hideProgressBar() {
+        // Hide progress item
+        miActionProgressItem.setVisible(false);
     }
 }
