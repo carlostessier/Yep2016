@@ -15,6 +15,9 @@
     <string name="waiting_message">Por favor espere...</string>
     <string name="login_user_error_message">No se ha podido loguear con el usuario %1$s.</string>
     <string name="menu_logout_label">Cerrar Sesión</string>
-
+    <string name="title_section1">Bandeja de Entrada</string>
+    <string name="title_section2">Amigos</string>
+    <string name="empty_inbox_label">No hay nuevos mensajes</string>
+    <string name="empty_friends_label">Añade amigos para empezar</string>
 
 </resources>
