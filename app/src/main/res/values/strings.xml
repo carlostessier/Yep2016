@@ -14,6 +14,7 @@
     <string name="loging_message">Logueando</string>
     <string name="waiting_message">Por favor espere...</string>
     <string name="login_user_error_message">No se ha podido loguear con el usuario %1$s.</string>
+    <string name="menu_logout_label">Cerrar Sesión</string>
 
 
 </resources>
