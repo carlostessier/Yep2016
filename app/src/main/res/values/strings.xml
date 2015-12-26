@@ -10,5 +10,6 @@
     <string name="sign_up_button_label">Regístrate</string>
     <string name="empty_field_message">El campo %1$s está vacío.</string>
     <string name="signup_error_title">Error</string>
+    <string name="add_user_error_message">No se ha podido añadir al usuario %1$s.</string>
 
 </resources>
