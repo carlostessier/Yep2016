@@ -40,18 +40,32 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         return NUMBER_OF_TABS;
     }
 
-    @Override
-    public CharSequence getPageTitle(int position) {
-        Locale l = Locale.getDefault();
-        switch (position) {
-            case 0:
-                return context.getString(R.string.title_section1).toUpperCase(l);
-            case 1:
-                return context.getString(R.string.title_section2).toUpperCase(l);
+////    sustituimos por icons
+//    @Override
+//    public CharSequence getPageTitle(int position) {
+//        Locale l = Locale.getDefault();
+//        switch (position) {
+//            case 0:
+//                return context.getString(R.string.title_section1).toUpperCase(l);
+//            case 1:
+//                return context.getString(R.string.title_section2).toUpperCase(l);
+//
+//        }
+//        return null;
+//    }
 
-        }
-        return null;
-    }
+////    TODO
+//    public int getIcon(int position) {
+//        switch (position) {
+//            case 0:
+//                return R.drawable.ic_inbox;
+//            case 1:
+//                return R.drawable.ic_people_24dp;
+//
+//        }
+//        return R.drawable.ic_inbox;
+////        return Integer.parseInt(null);
+//    }
 }
 
 

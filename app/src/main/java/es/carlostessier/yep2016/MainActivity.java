@@ -1,12 +1,19 @@
 package es.carlostessier.yep2016;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+//        //customizes actionbar
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.rgb(130, 130, 130)));
+//        getSupportActionBar().setStackedBackgroundDrawable(new ColorDrawable(Color.rgb(130, 130, 130)));
+
         // Create the adapter that will return a listfragment for their messages or their friends
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(),this);
 
@@ -60,8 +73,14 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
+
+
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_archive_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_people_24dp);
+
+
 
 /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

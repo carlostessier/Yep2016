@@ -19,5 +19,6 @@
     <string name="title_section2">Amigos</string>
     <string name="empty_inbox_label">No hay nuevos mensajes</string>
     <string name="empty_friends_label">Añade amigos para empezar</string>
+    <string name="menu_camera_label">action bar camera</string>
 
 </resources>
