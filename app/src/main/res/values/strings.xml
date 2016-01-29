@@ -2,12 +2,12 @@
     <string name="app_name">Yep2016</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="username_hint">Nombre de usuario</string>
-    <string name="password_hint">Contraseña</string>
-    <string name="Login_button_label">Ingresar</string>
-    <string name="sing_up_text">¡Regístrate!</string>
+    <string name="username_hint">username</string>
+    <string name="password_hint">password</string>
+    <string name="Login_button_label">LOGIN</string>
+    <string name="sing_up_text">have an account? SIGN UP here!</string>
     <string name="email_hint">E-mail</string>
-    <string name="sign_up_button_label">Regístrate</string>
+    <string name="sign_up_button_label">SIGN UP</string>
     <string name="empty_field_message">El campo %1$s está vacío.</string>
     <string name="signup_error_title">Error</string>
     <string name="add_user_error_message">No se ha podido añadir al usuario %1$s.</string>

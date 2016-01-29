@@ -1,6 +1,7 @@
 package es.carlostessier.yep2016;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AlertDialog;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -40,9 +42,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        TextView myTitle = (TextView)findViewById(R.id.textView);
+        TextView mySubtitle = (TextView)findViewById(R.id.textView2);
+        Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/AmaticSC-Regular.ttf");
+        myTitle.setTypeface(myFont);
+        mySubtitle.setTypeface(myFont);
 
     }
-
 
     private void initializeViews() {
         usernameField = (EditText) findViewById(R.id.usernameField);

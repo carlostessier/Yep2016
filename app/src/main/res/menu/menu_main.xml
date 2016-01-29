@@ -9,8 +9,8 @@
         app:showAsAction="never" />
 
     <item android:id="@+id/action_camera"
-        android:icon="@drawable/ic_camera"
+        android:icon="@android:drawable/ic_menu_camera"
         android:title="@string/menu_camera_label"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom|withText"/>
 
 </menu>

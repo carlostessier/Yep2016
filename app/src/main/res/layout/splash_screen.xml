@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.carlostessier.kepacha.ui.activities.LoginActivity"
+    android:background="@color/primary_dark">
+
+    <TextView
+        android:text="YEP!"
+        android:id="@+id/textView3"
+        style="@style/AuthTextView"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        style="@style/AuthTextView"
+        android:text="do i know you?"
+        android:id="@+id/textView4"
+        android:textSize="50sp"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@id/textView3"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"/>
+
+</RelativeLayout>
