@@ -1,6 +1,7 @@
 package es.carlostessier.yep2016;
 
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.ProgressBar;
  */
 public class InboxFragment extends android.support.v4.app.ListFragment{
     ProgressBar spinner;
+//    protected SwipeRefreshLayout mSwipe;
 
 
     final static String TAG = InboxFragment.class.getName();

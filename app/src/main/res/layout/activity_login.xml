@@ -34,7 +34,8 @@
         android:layout_below="@id/textView2"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
         >
 
         <EditText
@@ -61,17 +62,13 @@
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/Login_button_label"
         android:id="@+id/button"
-        android:layout_below="@id/linear"
         android:onClick="actionLoginButton"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="AmaticSC-Regular.ttf"
-        />
+        style="@style/ExtractedButtonStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
 
     <TextView
         android:layout_width="wrap_content"

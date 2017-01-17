@@ -22,33 +22,12 @@ public class Splash_Screen extends Activity {
 
         TextView myTitle = (TextView)findViewById(R.id.textView3);
         TextView mySubtitle = (TextView)findViewById(R.id.textView4);
-        Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/AmaticSC-Regular.ttf");
+        Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/SensaBrush-FillDemo.otf");
         myTitle.setTypeface(myFont);
         mySubtitle.setTypeface(myFont);
 
 
-        Animation shake = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
-
-//        overridePendingTransition(R.anim.pulse_animation, R.anim.shake);
-
-
-
-//shake.setAnimationListener(new Animation.AnimationListener() {
-//    @Override
-//    public void onAnimationStart(Animation animation) {
-//
-//    }
-//
-//    @Override
-//    public void onAnimationEnd(Animation animation) {
-//
-//    }
-//
-//    @Override
-//    public void onAnimationRepeat(Animation animation) {
-//
-//    }
-//});
+        Animation shake = AnimationUtils.loadAnimation(this, R.anim.grow_disappear_animation);
 
         mySubtitle.startAnimation(shake);
         openApp(true);
@@ -65,7 +44,7 @@ public class Splash_Screen extends Activity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 5000);
     }
 
 }
