@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 /**
  * Created by ernesto on 29/01/16.
+ * @version 0.1
  */
 
 public class Splash_Screen extends Activity {
