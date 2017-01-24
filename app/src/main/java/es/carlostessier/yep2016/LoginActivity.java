@@ -18,6 +18,9 @@ import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
+/**
+ * @author ernesto
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private EditText usernameField;
