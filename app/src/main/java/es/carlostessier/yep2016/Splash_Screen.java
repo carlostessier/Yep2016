@@ -23,14 +23,16 @@ public class Splash_Screen extends Activity {
 
         TextView myTitle = (TextView)findViewById(R.id.textView3);
         TextView mySubtitle = (TextView)findViewById(R.id.textView4);
+
+        // sets a Pretty Custom Font
         Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/SensaBrush-FillDemo.otf");
         myTitle.setTypeface(myFont);
         mySubtitle.setTypeface(myFont);
 
 
-        Animation shake = AnimationUtils.loadAnimation(this, R.anim.grow_disappear_animation);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
 
-        mySubtitle.startAnimation(shake);
+        mySubtitle.startAnimation(myanim);
         openApp(true);
     }
 
