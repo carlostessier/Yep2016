@@ -78,6 +78,21 @@
         android:clickable="true"
         android:layout_marginTop="30dp"/>
 
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape"
+        android:layout_below="@id/signUpText"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+
+        android:text="Click here!"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+                />
+
 
 
 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -23,6 +24,7 @@ public class Splash_Screen extends Activity {
 
         TextView myTitle = (TextView)findViewById(R.id.textView3);
         TextView mySubtitle = (TextView)findViewById(R.id.textView4);
+        ImageView myImage = (ImageView)findViewById(R.id.imageView);
 
         // sets a Pretty Custom Font
         Typeface myFont = Typeface.createFromAsset(getAssets(), "fonts/SensaBrush-FillDemo.otf");
@@ -32,7 +34,7 @@ public class Splash_Screen extends Activity {
 
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
 
-        mySubtitle.startAnimation(myanim);
+        myImage.startAnimation(myanim);
         openApp(true);
     }
 
